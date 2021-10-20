@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --darkBlue: hsl(234, 12%, 34%);
+    --gray: hsl(229, 6%, 66%);
+    --white: hsl(0, 0%, 98%);
+    --Poppins: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+body {
+    background-color: var(--white);
+    height: 100%;
+    min-width: 375px;
+    max-width: 1980px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--Poppins);
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--darkBlue);
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    color: var(--darkBlue);
+    margin-bottom: 1em;
+}
+
+p {
+    color: var(--gray);
+    margin: 0 auto 5em auto;
+    font-size: 15px;
+    line-height: 1.75;
+    max-width: 400px;
+}
+
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    padding: 2em;
+    text-align: left;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 2em auto;
+}
+
+.card img {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+.card:first-of-type {
+    border-top: 5px solid var(--cyan);
+}
+
+.middle .card:first-of-type {
+    border-top: 5px solid var(--red);
+}
+
+.middle .card:last-of-type {
+    border-top: 5px solid var(--orange);
+}
+
+.card:last-of-type {
+    border-top: 5px solid var(--blue);
+}
+
+h3 {
+    color: var(--darkBlue);
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        margin: 0 auto 5em auto;
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
